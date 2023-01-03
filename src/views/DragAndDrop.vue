@@ -1,5 +1,7 @@
 <script lang="js">
+import DropArea from "../component/DropArea.vue";
 export default {
+  components: {DropArea},
   data() {
     return {
       id: null
@@ -10,10 +12,6 @@ export default {
       console.log("ドラッグされました。")
       console.log(id)
       this.id = id
-    },
-    drop: function () {
-      console.log("ドロップされました。")
-      console.log(this.id)
     }
   }
 }
@@ -58,13 +56,7 @@ export default {
         <p>E:5</p>
       </div>
     </div>
-    <div id="drop" class="drop"
-         @drop.stop="drop"
-         @dragover.prevent
-         @dragenter.prevent
-    >
-      <p>Drop</p>
-    </div>
+    <drop-area/>
   </div>
 </template>
 
