@@ -7,6 +7,11 @@ const router = createRouter({
       path:"/",
       component:()=>import("../views/DragAndDrop.vue"),
       name:"dd"
+    },
+    {
+      path:"/lc",
+      component:()=>import("../views/LifeCycleCheck.vue"),
+      name:"lc"
     }
   ]
 })
