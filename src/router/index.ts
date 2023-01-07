@@ -12,6 +12,9 @@ const router = createRouter({
       path:"/lc",
       component:()=>import("../views/LifeCycleCheck.vue"),
       name:"lc"
+    },{
+    path:"/ft",
+      component:()=>import("../views/FileTest.vue")
     }
   ]
 })
