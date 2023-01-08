@@ -15,6 +15,10 @@ const router = createRouter({
     },{
     path:"/ft",
       component:()=>import("../views/FileTest.vue")
+    },
+    {
+      path:"/form",
+      component:()=>import("../views/FormTest.vue")
     }
   ]
 })
